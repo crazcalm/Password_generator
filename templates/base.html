@@ -7,7 +7,7 @@
 		<meta http-equiv = 'X-Content-Security-Policy: default-src "self";'>
 		<meta http-equiv = "Content-Security-Policy: default-src 'self';">
 
-		<link rel="stylesheet" href="base.css" type="text/css">
+		<link rel="stylesheet" href="static/base.css" type="text/css">
 
 	</head>
 
@@ -33,7 +33,7 @@ A spin off of R.O.D., lol</p>
 
 				<div id= "form">
 			
-					<form>
+					<form action= "/Password_Generator" method="post">
 
 					Password length: <input name = "number"
 									type = "number"
@@ -45,12 +45,15 @@ A spin off of R.O.D., lol</p>
 					Special Character: <input name: "special1"	
 									type= "radio"
 									name= "group1"
-									value= "yes">Yes</input>
+									checked = "checked"
+									value= "yes"/>
+									<label>Yes</label>
 									
 									<input name: "special2"
 									 type= "radio"
 									 name= "group1"
-									 value= "no">No<br><br>
+									 value= "no">
+									<label>No</label><br><br>
 									
 					Number of Digits: <input name= "digits"
 									type= "number"
