@@ -18,7 +18,7 @@ class Page1(flask.views.MethodView):
 		
 		flask.flash(test)
 		#return self.get()
-		return "Working on it..."
+		return flask.render_template("post.html")
 
 	
 app.add_url_rule("/Password_Generator", view_func=Page1.as_view("base"),
