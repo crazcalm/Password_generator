@@ -1,4 +1,5 @@
 import flask, flask.views
+import web_script
 
 app = flask.Flask(__name__)
 
@@ -13,12 +14,15 @@ class Page1(flask.views.MethodView):
 		
 		test = flask.request.form
 
-		for key, value in test.iteritems():
-			print key, value
-		
+		special_char, pass_len = [x for x in test.itervalues()]		
+
+		print pass_len, special_char
+
+		password = web_script.main(int(pass_len), special_char)
+
 		flask.flash(test)
-		#return self.get()
-		return flask.render_template("post.html")
+		return password
+		#return flask.render_template("post.html")
 
 	
 app.add_url_rule("/Password_Generator", view_func=Page1.as_view("base"),

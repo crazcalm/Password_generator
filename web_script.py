@@ -19,21 +19,23 @@ I need to take that option out of my web app interface!
 import string, random
 from pass_gen2 import password_chars
 
-# Need to test!!!
-def main(pass_len, special_chars, num_digits):
+def main(pass_len, special_chars):
 
 	password = ""
 
-	if special_chars:
+	if special_chars == "yes":
 		sample_set = string.printable[:-6]
 
 	else:
 		sample_set = string.printable[:62]
 
+	# Makes sure that there is at least one digit
 	password += random.choice(string.digits)
 	
-	password = pawword_chars(password, pass_len, sample_set)
+	# creates inital password
+	password = password_chars(password, pass_len, sample_set)
 
+	# Scrambles password
 	password = "".join(random.sample(password, pass_len))
 
 	return password
