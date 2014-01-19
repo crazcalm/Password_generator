@@ -20,9 +20,8 @@ class Page1(flask.views.MethodView):
 
 		password = web_script.main(int(pass_len), special_char)
 
-		flask.flash(test)
-		return password
-		#return flask.render_template("post.html")
+		#return password
+		return flask.render_template("post.html", password = password)
 
 	
 app.add_url_rule("/Password_Generator", view_func=Page1.as_view("base"),
