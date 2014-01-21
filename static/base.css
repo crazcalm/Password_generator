@@ -5,6 +5,11 @@ html, body{
 		width: 100%;
 }
 
+html{
+	background-color: #C3A5F2;
+
+}
+
 #header{
 
 	height: 6%;
@@ -14,11 +19,13 @@ html, body{
 	margin-bottom: -16px;
 	border-bottom: black;
 	border-bottom-style: solid;
+
+	font-family: monospace;
 }
 
 #background{
 
-	background-color: blue;
+	background-image: url("img/plain-black-and-blue-background-black-background-wallpaper-hd-wallpapers--1920x1200px--indiwall.jpg");
 
 	height: 90%;
 	width: 100%;
@@ -26,23 +33,25 @@ html, body{
 
 #content{
 
-	background-color: red;
+	background-color: #C53030;
 
 	height: 100%;
 	width:74%;
 	margin-left:13%;
 	border-radius:5%;
+
+	font-style: italic;
 }
 
 #content p{
 
 	text-align: left;
-	padding: 2%;
+	padding: 4% 6% 4% 6%;
 }
 
 #form{
 
-	background-color: white;
+	background-color: #B094DA;
 	height: auto;
 	width: 40%;
 	text-align: center;
@@ -53,7 +62,7 @@ html, body{
 
 #post{
 
-	background-color: white;
+	background-color: #B094DA;
 	height: auto;
 	width: 80%;
 	text-align: left;
@@ -61,6 +70,7 @@ html, body{
 	padding: 1%;
 	margin-left:10%;
 	margin-top: 10%;
+	font-weight: 700;
 }
 
 #post p{
@@ -68,5 +78,7 @@ html, body{
 	height:inherit;
 	width: initial;
 	text-align: center;
+	
+	letter-spacing: 4px;
 	
 }
