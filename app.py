@@ -28,5 +28,5 @@ app.add_url_rule("/Password_Generator", view_func=Page1.as_view("base"),
 				methods=["GET", "POST"])
 
 if __name__ == "__main__":
-	app.debug = True
+	#app.debug = True
 	app.run()
